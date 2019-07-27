@@ -1,23 +1,27 @@
 public abstract class Car {
-    private String steeringWheel;
-    private String wheel;
+    private SteeringWheel steeringWheel;
+    private Wheel wheel;
     private String modelOfCar;
 
-    public Car(String steeringWheel , String wheel , String modelOfCar){}
+    public Car(SteeringWheel steeringWheel , Wheel wheel , String modelOfCar){
+        this.steeringWheel = steeringWheel;
+        this.wheel = wheel;
+        this.modelOfCar = modelOfCar;
+    }
 
-    public String getSteeringWheel() {
+    public SteeringWheel getSteeringWheel() {
         return steeringWheel;
     }
 
-    public void setSteeringWheel(String steeringWheel) {
+    public void setSteeringWheel(SteeringWheel steeringWheel) {
         this.steeringWheel = steeringWheel;
     }
 
-    public String getWheel() {
+    public Wheel getWheel() {
         return wheel;
     }
 
-    public void setWheel(String wheel) {
+    public void setWheel(Wheel wheel) {
         this.wheel = wheel;
     }
 
